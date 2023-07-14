@@ -20,19 +20,130 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: rgb(218, 123, 0);
     padding: 10px 20px 0px;
 }
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    padding-top: 65%;
+}
+
+.menu ul li{
+    font-size: 25px;
+    text-align: center;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.menu ul li a:hover{
+    color: blue;
+}
+
 .header {
     background-color: rgb(5, 108, 108);
     min-height: 150px;
 }
+
 .content {
     background-color: white;
     min-height: 300px;
     padding: 20px;
+    display: flex;
+    border-top: solid 1px black;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
+
+.content-atend{
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-top: solid 1px black;
+    gap: 15px;
+}
+
+.texto{
+    font-size: 28px;
+    text-align: center;
+
+    font-family: sans-serif;
+}
+
+.imagem{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.imagem img{
+    width: 150px;
+    -webkit-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.56); 
+    box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.56);
+}
+
 .footer {
-    background-color: rgb(99, 56, 240);
+    background-color: rgb(202, 202, 202);
     min-height: 150px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-top: solid 1px black;
 }
+
+#formulario{
+    text-align: center;
+}
+
+label{
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+}
+
+input{
+    margin: 2px;
+}
+
+textarea{
+    padding: 2px;
+    margin: 2px;
+}
+
+table{
+    border: solid 1px black;
+    -webkit-box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.56); 
+    box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.56);
+}
+
+table tr:nth-child(even){
+    background-color: rgb(230, 230, 230);
+}
+
+table tr:hover{
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+td{
+    text-align: center;
+}
+
